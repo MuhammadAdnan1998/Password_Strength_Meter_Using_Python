@@ -83,11 +83,11 @@ def main():
     if dark_mode:
         st.markdown("""
             <style>
-            body { background-color: #121212; color: white; }
-            .stTextInput label { color: white; }
+            .stApp { background-color: #121212 !important; } /* Full screen dark mode */
+            .stTextInput label { color: white !important; } /* Ensure input label is visible */
             .stButton button { background-color: #333; color: white; }
             </style>
-        """, unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
 
     # UI title
     st.title("🔐 Password Strength Meter")
