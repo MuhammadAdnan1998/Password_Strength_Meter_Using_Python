@@ -51,9 +51,9 @@ def main():
     st.title("🔐 Password Strength Meter")
     password = st.text_input("Enter your password:", type="password")
 
-    if st.button("Check Password Strength"):
-        result = check_password_strength(password)
-        st.write(result)
+    if st.button("Check Password Strength"):    # Button to trigger password strength check
+        result = check_password_strength(password)  # Call function to evaluate password
+        st.write(result)    # Display the result on the UI
 
 if __name__ == "__main__":
     main()
